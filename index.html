@@ -23,13 +23,11 @@
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />  
-<title>DNM - DEpartamento Nacional de Missões</title>  
+<title>DNM - Departamento Nacional de Missões</title>  
 <link href="css/bootstrap.min.css" rel="stylesheet">  
 <link href="css/bootstrap-theme.css" rel="stylesheet">  
 <link href="css/bootstrap.css" rel="stylesheet">  
 <link href="css/style.css" rel="stylesheet">  
-
-        
 <script src="js/jquery.js"></script>  
 <script src="js/bootstrap.min.js"></script>  
 <script src="js/npm.js"></script>  
@@ -106,49 +104,6 @@ $(document).ready(function(){
 </head>  
   
 <body>
-<!-- header -->
-
-<div class="header col-xs-12">
-		<div class=" nav">
-			<span class="menu"><img src="images/menu.png" alt=""> </span>	
-				<ul>
-					<li><a href="#"><i> </i>Inbox<span>1</span></a></li>
-					<li><a href="#" ><i class="shop"> </i> Shop</a></li>	
-					<li><a href="#" ><i class="my"> </i> My Files</a></li>
-					<li><a href="#" ><i class="profile"> </i>Profile</a></li>							
-				</ul>
-				<script>
-					$("span.menu").click(function(){
-						$(".nav ul").slideToggle(500, function(){
-						});
-					});
-				</script>
-		</div>
-		<div class="header-top">
-		<div class=" top-menu">
-				<span class="menu1">Menu </span>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">about</a></li>
-					<li><a href="#">services</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-				<script>
-					$("span.menu1").click(function(){
-						$(".top-menu ul").slideToggle(500, function(){
-						});
-					});
-				</script>
-				
-		</div>
-			
-				<div class="clear"> </div>
-		
-</div>
-<div class="clear"> </div>
-	</div>
 
 <!-- fim do header -->
 <!-- banner -->
@@ -157,95 +112,72 @@ $(document).ready(function(){
 <!-- fim do banner -->
 </div>
 <div class="conteudo col-xs-12">
+<div class="content-middle4">
+		 <div class="slider">
+	
+		  <div class="callbacks_container">
+	      <ul class="rslides" id="slider">
+	        <li>
+	          <a href="#"><img src="images/pi1.jpg" alt=""></a>
+	          
+	        </li>
+	        <li>
+	          <a href="#"><img src="images/pi7.jpg" alt=""></a>
+	          
+	        </li>
+	        <li>
+	          <a href="#"><img src="images/pi8.jpg" alt=""></a>
+	          
+	        </li>
+            <li>
+	          <a href="#"><img src="images/pi7.jpg" alt=""></a>
+	          
+	        </li>
+	      </ul>
+
+	</div>
+	</div>
+	</div>
+    </div>
+
+<div class="conteudo col-xs-12">
+
+<!-- coluna da direita -->
+<div class="col-dir-item-1 col-xs-5">
+ <a href="#"><img src="img/campanha.png"/></a>
+</div>
+<div class="espaco-vert"></div>
+<div class="col-esq-item-1 col-xs-5">
+<a href="#"><img src="img/projetos.png"/></a>
+</div>
+<div class="espaco-hor"></div>
+<!-- fim da coluna da direita-->
+
+<!-- coluna da esquerda-->
+<div class="col-dir-item-2 col-xs-5">
+
+</div>
+<div class="espaco-vert"></div>
+<div class="col-esq-item-2 col-xs-5">
+
+</div>
+<!-- fim da coluna da esquerda-->
+</div>
+
+
+<div class="conteudo col-xs-12">
 
 <div class="slider">
                   <section class="slider">
                       <div class="flexslider">
                       <ul class="slides">
-                      <li>
-                      	<div class="mid">
-                      	<div class="mid1">
-    	                <h2>IPSUM DOLOR SIT</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                        <a href="#"><i></i>Read More</a>
-                        </div>
-                        <div class="mid2">
-                        	<div class="content-main">
-						<div class=" content-main-left">
-							<div class="upload">
-								
-								<div class="diagram">
-									<canvas id="canvas" height="220" width="220"> </canvas>
-									<h4>75%</h4>   
-								</div>
-							</div>
-							<script>
-						var doughnutData = [
-								
-								{
-									value : 25,
-									color : "#ffffff"
-								},
-								{
-									value: 75,
-									color:"#025a85"
-								},	
-													
-							];				
-							var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);					
-					</script>
-							
-</div>
-                        </div>
-                        </div>
-                        <div class="clear"> </div>
-                        </div>
-  	    		</li>
- 	    		<li>
-                      	<div class="mid">
-                      	<div class="mid1">
-    	                <h2>IPSUM DOLOR SIT</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                        <a href="#"><i></i>Read More</a>
-                        </div>
-                        <div class="mid2">
-                        	<div class="content-main">
-						<div class=" content-main-left">
-							<div class="upload">
-								
-								<div class="diagram">
-									<canvas id="canvas1" height="220" width="220"> </canvas>
-									<h4>75%</h4>   
-								</div>
-							</div>
-							<script>
-						var doughnutData = [
-								{
-									value : 25,
-									color : "#ffffff"
-								},
-								{
-									value: 75,
-									color:"#025a85"
-								},	
-										
-													
-							];				
-							var myDoughnut = new Chart(document.getElementById("canvas1").getContext("2d")).Doughnut(doughnutData);					
-					</script>
-							
-</div>
-                        </div>
-                        </div>
-                        <div class="clear"> </div>
-                        </div>
-  	    		</li>
+                
   	    		<li>
                       	<div class="mid">
                       	<div class="mid1">
-    	                <h2>IPSUM DOLOR SIT</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                        <a href="#"><i></i>Read More</a>
+    	                <h2>ARRECADAÇÃO DA CAMPANHA NACIONAL DE MISSÕES 2015</h2>
+                        <p>Até o momento esta é a porcentagem que alcançamos da nossa arrecadação anual destinado a missões.</p>
+                        <a href="http://aicebdnm.com.br/arrecadacao-campanha-de-missoes-2015/" target="_blank"><i></i>Veja mais</a>
                         </div>
                         <div class="mid2">
                         	<div class="content-main">
@@ -305,42 +237,21 @@ $(document).ready(function(){
 
 </div>
 
-<div class="conteudo col-xs-12">
-
-<!-- coluna da direita -->
-<div class="col-dir-item-1 col-xs-5">
- <a href="#"><img src="img/campanha.png"/></a>
-</div>
-<div class="espaco-vert"></div>
-<div class="col-esq-item-1 col-xs-5">
-<a href="#"><img src="img/projetos.png"/></a>
-</div>
-<div class="espaco-hor"></div>
-<!-- fim da coluna da direita-->
-
-<!-- coluna da esquerda-->
-<div class="col-dir-item-2 col-xs-5">
-
-</div>
-<div class="espaco-vert"></div>
-<div class="col-esq-item-2 col-xs-5">
-
-</div>
-<!-- fim da coluna da esquerda-->
-</div>
-
 <div class="facebook conteudo col-xs-12">
 <div class="content-middle-top4">
-		<h4>Lorem Ipsum</h4>
-		<p>Lorem IpsumLorem Ipsum</p>
+		<h4>REDES SOCIAIS</h4>
+		<p>Curta a nossa página.</p>
 		<div class="follow">
 			<div class="follow-img"><img src="images/co1.png" alt=""></div>
 			<div class="follow-text">
-				<a href="#"><i></i>Follow</a>
+				<a href="https://www.facebook.com/aicebdnm/" target="_blank"><i></i>Curta</a>
 			</div>
 			<div class="clear"> </div>
 		</div>
 	</div>
+    </div>
+    
+    
 </body>
 
 </body>  
