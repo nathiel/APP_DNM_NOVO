@@ -1089,12 +1089,12 @@ a.button i {
   color:#fff;
 }
 /*--responsive--*/
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait){
+@media only screen and (min-device-width: 320px) and (orientation : portrait){
 .app_home {
-	display:block;
+	display:none;
 }
 .app_home_1 {
-	display:none;
+	display:block;
 }
 .navbar-default {
 	background-color:#000;
@@ -1106,7 +1106,24 @@ a.button i {
 	margin-top:10px;
 }
 }
-@media only screen and (min-device-width: 480px) and (max-device-height: 800px) and (orientation : portrait){
+@media only screen and (min-device-width: 360px) and (orientation : portrait){
+.app_home {
+	display:none;
+}
+.app_home_1 {
+	display:block;
+}
+.navbar-default {
+	background-color:#000;
+}
+.navbar {
+	width:100%;
+	background:transparent;
+	border:none;
+	margin-top:10px;
+}
+}
+@media only screen and (min-device-width: 480px) and (orientation : portrait){
 .app_home {
 	display:none;
 }
