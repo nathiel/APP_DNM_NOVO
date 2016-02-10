@@ -1,187 +1,361 @@
-<!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-    http://www.apache.org/licenses/LICENSE-2.0
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=3, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />  
-<title>DNM - Departamento Nacional de Missões</title>  
-<link href="css/bootstrap-theme.css" rel="stylesheet">  
-<link href="css/bootstrap.css" rel="stylesheet">  
-<link href="css/style.css" rel="stylesheet">  
-<link type="text/css" rel="stylesheet" href="css/demo.css" />
-<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
-<script src="js/jquery.js"></script>  
-<script src="js/bootstrap.min.js"></script>  
-<script src="js/npm.js"></script>  
-<script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
-		<script type="text/javascript">
-			$(function() {
-				$('nav#menu').mmenu();
-			});
-		</script>
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!---->
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-<script type="text/javascript" src="js/Chart.js"></script>
-<!---->
-<!--Calender -->
-  <link rel="stylesheet" href="css/clndr.css" type="text/css" />
-  <script src="js/underscore-min.js"></script>
-  <script src= "js/moment-2.2.1.js"></script>
-  <script src="js/clndr.js"></script>
-  <script src="js/site.js"></script>
-  <!--End Calender -->
-  <script src="js/responsiveslides.min.js"></script>
- <script>
-    $(function () {
-      $("#slider").responsiveSlides({
-      	auto: true,
-      	nav: true,
-      	speed: 500,
-        namespace: "callbacks",
-        pager: true,
-      });
-    });
-  </script>
-  <script>
-    $(function () {
-      $("#slider1").responsiveSlides({
-      	auto: true,
-      	nav: true,
-      	speed: 500,
-        namespace: "callbacks",
-        pager: true,
-      });
-    });
-  </script>
-  <!----video -------->	
-<link href="css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
-<script type="text/javascript">
-//<![CDATA[
-$(document).ready(function(){
+ <!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="pt-br"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="pt-br"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="pt-br"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="pt-br"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="DNM - Departamento Nacional de Missões ">
+    <meta name="author" content="">
 
-	$("#jquery_jplayer_1").jPlayer({
-		ready: function () {
-			$(this).jPlayer("setMedia", {
-				title: "Finding Nemo Teaser",
-				m4v: "http://www.jplayer.org/video/m4v/Finding_Nemo_Teaser.m4v",
-				poster: "http://www.jplayer.org/video/poster/Finding_Nemo_Teaser_640x352.png"
-			});
-		},
-		swfPath: "../../dist/jplayer",
-		supplied: "m4v",
-		size: {
-			width: "100%",
-			height: "275px",
-			cssClass: "jp-video-360p"
-		},
-		useStateClassSkin: true,
-		autoBlur: false,
-		smoothPlayBar: true,
-		keyEnabled: true,
-		remainingDuration: true,
-		toggleDuration: true
-	});
-});
-//]]>
-</script>
-<!----//video -------->
+    <title>DNM - Departamento Nacional de Missões</title>
 
-</head>  
-  
-<body>
-<div class="container-fluid">
-			<div class="header">
-				<a href="#menu"></a>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+ 
+    <!-- Custom Google Web Font -->
+    
+	
+    <!-- Custom CSS-->
+    <link href="css/general.css" rel="stylesheet">
+	
+	 <!-- Owl-Carousel -->
+    <link href="css/custom.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	
+	<!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="css/magnific-popup.css"> 
+	
+	<script src="js/modernizr-2.6.2.min.js"></script>  <!-- Modernizr /-->
+</head>
+
+<body id="home">
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+	
+	<!-- FullScreen -->
+    <div class="intro-header">
+		<div class="col-xs-12 text-center abcen1">
+			<h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">DNM</h1>
+			<h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Departamento Nacional de Missões</h3>
+			<ul class="list-inline intro-social-buttons">
+				<li><a href="https://www.facebook.com/aicebdnm/" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">Facebook</span></a>
+				</li>
+				<li id="download" ><a href="http://aicebdnm.com.br/" class="btn  btn-lg mybutton_standard wow swing wow fadeIn" data-wow-delay="1.2s"><span class="network-name">Visite nosso Portal</span></a>
+				</li>
+			</ul>
+		</div>    
+        <!-- /.container -->
+		<div class="col-xs-12 text-center abcen wow fadeIn">
+			<div class="button_down "> 
+				<a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#whatis"> <img class="img_scroll" src="img/icon/circle.png" alt=""> </a>
 			</div>
-			<nav id="menu">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#about">Sobre Nós</a>
-						<ul>
-							<li><a href="#about/history">History</a></li>
-							<li><a href="#about/team">The team</a>
-								<ul>
-									<li><a href="#about/team/management">Management</a></li>
-									<li><a href="#about/team/sales">Sales</a></li>
-									<li><a href="#about/team/development">Development</a></li>
-								</ul>
-							</li>
-							<li><a href="#about/address">Our address</a></li>
-						</ul>
-					</li>
-					<li><a href="#contact">Projetos & Campos</a>
-                    	<ul>
-									<li><a href="#about/team/management">Projetos Missionários</a></li>
-									<li><a href="#about/team/development">Campos Missionários</a></li>
-								</ul>
-                    </li>
-                    <li><a href="online.html">Últimas Notícias</a></li>
-                    <li><a href="#contact">Contato</a></li>
+		</div>
+    </div>
+	
+	<!-- NavBar-->
+	<nav class="navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#home">DNM</a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					
+					<li class="menuItem"><a href="#whatis">Quem Somos</a></li>
+					<li class="menuItem"><a href="#useit">Revista Aliança Missionária</a></li>
+					<li class="menuItem"><a href="#campanha">Campanha Nacional</a></li>
+					<li class="menuItem"><a href="#screen">Campos & Projetos</a></li>
+					<li class="menuItem"><a href="#noticias">Últimas Notícias</a></li>
 				</ul>
-			</nav>
-		
+			</div>
+		   
+		</div>
+	</nav> 
+	
+	<!-- What is -->
+	<div id="whatis" class="content-section-b" style="border-top: 0">
+		<div class="container">
+
+			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2>Quem Somos</h2>
+				
+				
+			</div>
+			
+			<div class="row">
+			
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <img class="rotate" src="img/icon.png" alt="Generic placeholder image">
+				  <h3>O DNM</h3>
+				  <p class="lead">É um órgão instituído pela Aliança das Igrejas Cristãs Evangélicas do Brasil, AICEB, tendo sua  razão na própria existência da Igreja do Nosso Senhor Jesus Cristo, visando, sobretudo, promover a obra missionária desde a igreja local até os confins do mundo, indo, orando e contribuindo. </p>
+
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <img  class="rotate" src="img/icon/picture.svg" alt="Generic placeholder image">
+				   <h3>No Brasil</h3>
+				   <p class="lead">Possuímos campos e projetos missionários espalhados de Norte a Sul do país. Envolvendo povos ribeirinhos, indígenas, sertanejos e muçulmanos.</p>
+				   <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <img  class="rotate" src="img/icon/retina.svg" alt="Generic placeholder image">
+				   <h3>Pelo Mundo</h3>
+					<p class="lead">Estamos atuando no momento em 3 países ao redor do mundo. São os seguintes países: Timor Leste, Angola e Uruguai. </p>
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+			</div><!-- /.row -->
+				
+			
+		</div>
+	</div>
+	
+	<!-- Use it -->
+    <div id ="useit" class="content-section-a">
+
+        <div class="container">
+			
+            <div class="row">
+			
+				<div class="col-sm-6 pull-right wow fadeInRightBig">
+                    <img class="img-responsive " src="img/ipad.png" alt="">
+                </div>
+				
+                <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
+                    <h3 class="section-heading">Revista Aliança Missionária</h3>
+					
+                    <p class="lead">
+						Nossa revista oficial contendo as informações sobre os nossos projetos e campos missionários contemplados com a arrecadação da campanha nacional de missões de 2014. Aproveite!
+					</p>
+
+					 <p><a class="btn btn-embossed btn-primary" href="http://issuu.com/nathielmoraes/docs/revista_miss__es_2015/1" role="button">Visualizar</a> 
+				</div>   
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+
+    <div class="content-section-b"> 
+		<div id="campanha">
+		<div class="container">
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeftBig">
+                     <div id="owl-demo-1" class="owl-carousel">
+						<a href="img/iphone.png" class="image-link">
+							<div class="item">
+								<img  class="img-responsive img-rounded" src="img/iphone.png" alt="">
+							</div>
+						</a>
+						<a href="img/iphone.png" class="image-link">
+							<div class="item">
+								<img  class="img-responsive img-rounded" src="img/iphone-2.png" alt="">
+							</div>
+						</a>
+						<a href="img/iphone.png" class="image-link">
+							<div class="item">
+								<img  class="img-responsive img-rounded" src="img/iphone-3.png" alt="">
+							</div>
+						</a>
+					</div>       
+                </div>
+				
+                <div class="col-sm-6 wow fadeInRightBig"  data-animation-delay="200">   
+                    <h3 class="section-heading">Campanha Nacional de Missões</h3>
+					
+                    <p class="lead">
+						Veja nosso material oficial da Campanha Nacional de Missões 2015, nossos vídeos, atividades para as crianças, Missões Kids, estudos e muito mais.
+                        Aproveite!
+					</p>
+
+					 <p><a class="btn btn-embossed btn-primary" href="http://issuu.com/nathielmoraes/docs/manual_de_miss__es_2015/1" role="button">Manual</a> 
+					 <a class="btn btn-embossed btn-primary" href="videos.html" role="button">Vídeos</a></p>
+				</div>  			
+			</div>
+        </div>
+    </div>
+    </div>
+
+    
+
+	<!-- Screenshot -->
+	<div id="screen" class="content-section-b">
+        <div class="container">
+          <div class="row" >
+			 <div class="col-md-6 col-md-offset-3 text-center wrap_title ">
+				<h2>Campos & Projetos</h2>
+				<p class="lead" style="margin-top:0">Missionários</p>
+			 </div>
+		  </div>
+		    <div class="row wow bounceInUp" >
+              <div id="owl-demo" class="owl-carousel">
+				
+				<a href="img/slide/1.png" class="image-link">
+					<div class="item">
+						<img  class="img-responsive img-rounded" src="img/slide/1.png" alt="Owl Image">
+					</div>
+				</a>
+				
+               <a href="img/slide/2.png" class="image-link">
+					<div class="item">
+						<img  class="img-responsive img-rounded" src="img/slide/2.png" alt="Owl Image">
+					</div>
+				</a>
+				
+				<a href="img/slide/3.png" class="image-link">
+					<div class="item">
+						<img  class="img-responsive img-rounded" src="img/slide/3.png" alt="Owl Image">
+					</div>
+				</a>
+				
+				<a href="img/slide/1.png" class="image-link">
+					<div class="item">
+						<img  class="img-responsive img-rounded" src="img/slide/4.png" alt="Owl Image">
+					</div>
+				</a>
+				
+               <a href="img/slide/2.png" class="image-link">
+					<div class="item">
+						<img  class="img-responsive img-rounded" src="img/slide/5.png" alt="Owl Image">
+					</div>
+				</a>
+				
+				<a href="img/slide/3.png" class="image-link">
+					<div class="item">
+						<img  class="img-responsive img-rounded" src="img/slide/6.png" alt="Owl Image">
+					</div>
+				</a>
+                <a href="img/slide/1.png" class="image-link">
+					<div class="item">
+						<img  class="img-responsive img-rounded" src="img/slide/7.png" alt="Owl Image">
+					</div>
+				</a>
+				
+               <a href="img/slide/2.png" class="image-link">
+					<div class="item">
+						<img  class="img-responsive img-rounded" src="img/slide/8.png" alt="Owl Image">
+					</div>
+				</a>
+				
+				<a href="img/slide/3.png" class="image-link">
+					<div class="item">
+						<img  class="img-responsive img-rounded" src="img/slide/9.png" alt="Owl Image">
+					</div>
+				</a>
+				
+				<a href="img/slide/1.png" class="image-link">
+					<div class="item">
+						<img  class="img-responsive img-rounded" src="img/slide/10.png" alt="Owl Image">
+					</div>
+				</a>
+				
+               <a href="img/slide/2.png" class="image-link">
+					<div class="item">
+						<img  class="img-responsive img-rounded" src="img/slide/11.png" alt="Owl Image">
+					</div>
+				</a>
+				
+				<a href="img/slide/3.png" class="image-link">
+					<div class="item">
+						<img  class="img-responsive img-rounded" src="img/slide/12.png" alt="Owl Image">
+					</div>
+				</a>
+                 
+              </div>       
+          </div>
+          <p>Esse e outros Campos e Projetos estão em nosso Portal! Veja mais acessando agora.</p>
+          <p><a class="btn btn-embossed btn-primary" href="#" role="button">Acessar</a></p>
+          
+        </div>
 
 
-<section class="app_home_1">
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-  </ol>
+	</div>
+	
+    <div  class="content-section-c ">
+    <div id="noticias">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-6 col-md-offset-3 text-center wrap_title white">
+				<h2>Últimas Notícias</h2>
+				<p class="lead" style="margin-top:0">Saiba mais sobre estes e outros Projetos & Campos, além de muitas novidades e notícias.</p>
+			 </div>
+			<div class="mockup-content">
+					<div class="morph-button wow pulse morph-button-inflow morph-button-inflow-1">
+						<button type="button "><span>Visualizar</span></button>
+						<div class="morph-content">
+							<div>
+								<div class="content-style-form content-style-form-4 ">
+									<h2 class="morph-clone">Ver agora</h2>
+                                    <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/AICEB_DNM" data-widget-id="586332555810603008">Tweets de @AICEB_DNM</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	</div>
+    
+    <div id="downloadlink" class="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2>Quer fazer parte do nosso time?</h2>
+				<p class="lead" style="margin-top:0">Entre em contato conosco</p>
+				<p><a href="tel:45 9117-2316" class="btn btn-embossed btn-primary view" role="button">Falar com o DNM</a></p> 
+			 </div>
+			</div>
+		</div>
+	</div>
+			
+    </footer>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <a href="#"><img src="images/pi1_1.jpg" alt="..."></a>
-      <div class="carousel-caption">
-        
-      </div>
-    </div>
-    <div class="item">
-      <a href="#"><img src="images/pi1_2.jpg" alt="..."></a>
-      <div class="carousel-caption">
-        
-      </div>
-    </div>
-    <div class="item">
-      <a href="#"><img src="images/pi1_3.jpg" alt="..."></a>
-      <div class="carousel-caption">
-        
-      </div>
-    </div>
-    <div class="item">
-      <a href="online.html"><img src="images/pi1_4.jpg" alt="..."></a>
-      <div class="carousel-caption">
-        
-      </div>
-    </div>
-  </div>
-  </div>
-</section>
-</div>
-</body>  
-</html>  
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/script.js"></script>
+	<!-- StikyMenu -->
+	<script src="js/stickUp.min.js"></script>
+	<script type="text/javascript">
+	  jQuery(function($) {
+		$(document).ready( function() {
+		  $('.navbar-default').stickUp();
+		  
+		});
+	  });
+	
+	</script>
+	<!-- Smoothscroll -->
+	<script type="text/javascript" src="js/jquery.corner.js"></script> 
+	<script src="js/wow.min.js"></script>
+	<script>
+	 new WOW().init();
+	</script>
+	<script src="js/classie.js"></script>
+	<script src="js/uiMorphingButton_inflow.js"></script>
+	<!-- Magnific Popup core JS file -->
+	<script src="js/jquery.magnific-popup.js"></script> 
+</body>
+
+</html>
